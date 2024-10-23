@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_DB: marcasdb
+    ports:
+      - "5432:5432"
+
+  api:
+    image: mcr.microsoft.com/dotnet/aspnet:7.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - db

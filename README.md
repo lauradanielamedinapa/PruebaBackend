@@ -14,7 +14,7 @@ Laura Daniela Medina Paipilla- +573134865169 - danielamedina1121@gmail.com
 
 - Docker y Docker Compose instalados.
 - (Opcional) .NET SDK si desea ejecutar el proyecto localmente sin Docker.
-- 
+   
 ## Configuración con Docker
 El proyecto incluye un archivo docker-compose.yml que configura dos servicios:
 db: Un contenedor de PostgreSQL.
@@ -31,7 +31,7 @@ Este proyecto incluye una configuración de seed data en AutoContext.cs, por lo 
 Las pruebas unitarias están implementadas utilizando XUnit. Para ejecutar las pruebas localmente: dotnet test
 El archivo de pruebas se encuentra en la carpeta tests/MarcasAutosControllerTests.cs.
 
-##Docker Compose
+## Docker Compose
 El archivo docker-compose.yml configura los siguientes servicios:
 PostgreSQL: El contenedor de la base de datos, accesible en el puerto 5432.
 API REST: El contenedor de la API, accesible en el puerto 5000
@@ -39,11 +39,11 @@ API REST: El contenedor de la API, accesible en el puerto 5000
 
 
 ## Tecnologías Utilizadas
-C# / ASP.NET Core: Para el desarrollo de la API REST.
-Entity Framework Core: Para el manejo de la base de datos y migraciones.
-PostgreSQL: Base de datos para almacenar las marcas de autos.
-XUnit: Para las pruebas unitarias.
-Docker & Docker Compose: Para el despliegue y manejo de entornos.
+- C# / ASP.NET Core: Para el desarrollo de la API REST.
+- Entity Framework Core: Para el manejo de la base de datos y migraciones.
+- PostgreSQL: Base de datos para almacenar las marcas de autos.
+- XUnit: Para las pruebas unitarias.
+- Docker & Docker Compose: Para el despliegue y manejo de entornos.
 
 
 
